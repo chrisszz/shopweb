@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root{
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+*{
+    font-family: "Playfair Display", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline:  none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s;
+    list-style: none;
+}
+
+body{
+    background: #eee;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.list{
+    width: 13rem;
+    margin-left: -8rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 10rem;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: lightgreen;
+    color: darkgreen;
+}
+
+.checkout{
+    padding-top:1rem;
+    text-align: center;
+}
+
+.textbox{
+    width:1rem;
+}
+
+.cart:hover .list{
+    display: block;
+}
+
+.sidebar{
+    position:fixed;
+    padding: 20rem 3rem;
+}
+
+.content{
+    width:1500px;
+    height:170px;
+    margin-left: 17rem;
+    padding-top:5rem;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(200px, 1fr));
+    gap: 3em;
+}
+
+.detail{
+    margin-left: 17rem;
+    padding-top:5rem;
+}
+
+.detail .info{
+    font-size: 2rem;
+    margin-top: -30rem;
+    margin-left: 50rem;
+}
+
+.detail img{
+    width: 600px;
+    height: 600px;
+}
+
+img{
+    width:250px;
+}
+
+footer{
+    text-align: center;
+    position: relative;
+    margin-top: 60rem;
+}
+
+
